@@ -1,0 +1,78 @@
+.block.open .opacity,
+.block.open .block-modal {
+    opacity: 1;
+    z-index: 1000;
+}
+.block.hide .opacity,
+.block.hide .block-modal {
+    opacity: 1;
+    z-index: 1000;
+}
+.block.open .block-modal {
+    transform: translateY(55px);
+    
+}
+.block.open .opacity {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.block.hide .block-modal {
+    transform: translateY(-200px);
+    
+}
+.block.hide .opacity {
+    background-color: rgba(0, 0, 0, 0);
+}
+.block-modal, .opacity {
+    opacity: 0;
+    z-index: -1;
+}
+.opacity {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background 0.2s ease-in;
+}
+.block-content {
+    margin: 0 100px;
+}
+.block-modal {
+    width: 600px;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 5px;
+    transform: translateY(-200px);
+    transition: transform 0.2s ease-in;
+}
+.modal-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 19px;
+    border-bottom: 1px solid #eee;
+}
+.modal-text {
+}
+.modal-close {
+    cursor: pointer;
+}
+.modal-body {
+    border-bottom: 1px solid #eee;
+}
+.modal-body__text {
+    margin: 0;
+}
+.modal-body__text:nth-child(2) {
+    margin-top: 12px;
+}
+.buttom {
+    text-align: right;
+    padding: 5px;
+}
+.buttom button {
+    cursor: pointer;
+    outline: none;
+}
